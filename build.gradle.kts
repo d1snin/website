@@ -1,5 +1,5 @@
 /*
- * Copyright 2022-2023 Mikhail Titov
+ * Copyright 2023 Mikhail Titov
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,31 +29,27 @@ group = projectGroup
 version = projectVersion
 
 application {
-    mainClass.set("dev.d1s.app.ApplicationKt")
+    mainClass.set("dev.d1s.clock.MainKt")
 }
 
 repositories {
     mavenCentral()
+    mavenLocal()
+    maven(url = "https://maven.d1s.dev/releases")
+    maven(url = "https://maven.d1s.dev/snapshots")
 }
 
 dependencies {
+    val beamVersion: String by project
+
     val logbackVersion: String by project
-    val kmLogVersion: String by project
-
-    val hopliteVersion: String by project
-
-    val koinVersion: String by project
 
     implementation(kotlin("reflect"))
     implementation(kotlin("stdlib"))
 
+    implementation("dev.d1s.beam:beam-client-app:$beamVersion")
+
     implementation("ch.qos.logback:logback-classic:$logbackVersion")
-    implementation("org.lighthousegames:logging:$kmLogVersion")
-
-    implementation("com.sksamuel.hoplite:hoplite-core:$hopliteVersion")
-
-    implementation("io.insert-koin:koin-core:$koinVersion")
-    implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 }
 
 tasks.withType<KotlinCompile> {

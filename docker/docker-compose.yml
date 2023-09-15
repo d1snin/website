@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  kotlin-jvm-application-template:
-    image: kotlin-jvm-application-template:latest
-    container_name: kotlin-jvm-application-template
+  website:
+    image: website:latest
+    container_name: website
     build:
       context: ../
       dockerfile: ./docker/Dockerfile

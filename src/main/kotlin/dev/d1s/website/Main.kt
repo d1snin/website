@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
-package dev.d1s.app
+package dev.d1s.website
 
-import org.koin.core.component.KoinComponent
-import org.lighthousegames.logging.logging
+import dev.d1s.beam.client.app.ApplicationContext
+import dev.d1s.beam.client.app.BeamClientApplication
+import dev.d1s.beam.client.app.run
 
-class Application : KoinComponent {
+class WebsiteApplication : BeamClientApplication() {
 
-    private val log = logging()
+    override suspend fun ApplicationContext.run() {
 
-    fun run() {
-        log.i {
-            "Application is starting."
-        }
     }
+}
+
+fun main() {
+    run(WebsiteApplication())
 }
