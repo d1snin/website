@@ -29,7 +29,7 @@ group = projectGroup
 version = projectVersion
 
 application {
-    mainClass.set("dev.d1s.clock.MainKt")
+    mainClass.set("dev.d1s.website.MainKt")
 }
 
 repositories {
