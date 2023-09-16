@@ -36,8 +36,12 @@ suspend fun ApplicationContext.englishTranslation() {
                     "I have a wide-range experience using industry-standard JVM frameworks including Spring (Boot, Data, Web, etc), JPA and others. " +
                     "Now using Kotlin with Ktor as a web framework. I also develop frontend using [KVision][https://kvision.io].",
             WebsiteTranslation.LOCATION_WHAT_IS_THIS_HEADING to "(:question-circle:)(orange) What is this?",
-            WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT to "This is my website running on home-made mini WCF - [Beam][https://github.com/d1snin/beam]. " +
-                    "Here you can learn more about me or just contact me."
+            WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH to "This is my website running on home-made mini WCM - [*Beam*][https://github.com/d1snin/beam].",
+            WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH to "Here you can learn more about me or just contact me.",
+            WebsiteTranslation.LOCATION_CONTACTS_HEADING to "(:chat-dots:)(orange) How to contact me?",
+            WebsiteTranslation.LOCATION_CONTACTS_TEXT to "You can chat with me on Telegram. Here is the link. *Don't hesitate to say hello!*",
+            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_TEXT to "Telegram",
+            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin"
         )
     }
 }

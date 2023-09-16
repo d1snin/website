@@ -20,16 +20,17 @@ import dev.d1s.beam.client.app.ApplicationContext
 import dev.d1s.beam.client.app.BeamClientApplication
 import dev.d1s.beam.client.app.run
 import dev.d1s.beam.client.app.state.block
+import dev.d1s.website.block.contacts
 import dev.d1s.website.block.intro
 import dev.d1s.website.block.pictureOfMe
 import dev.d1s.website.block.whatIsThis
 import dev.d1s.website.space.configureSpace
-import dev.d1s.website.translation.englishTranslation
+import dev.d1s.website.translation.russianTranslation
 
 class WebsiteApplication : BeamClientApplication() {
 
     override suspend fun ApplicationContext.run() {
-        englishTranslation()
+        russianTranslation()
 
         configureSpace()
 
@@ -43,6 +44,10 @@ class WebsiteApplication : BeamClientApplication() {
 
         block {
             whatIsThis()
+        }
+
+        block {
+            contacts()
         }
     }
 }
