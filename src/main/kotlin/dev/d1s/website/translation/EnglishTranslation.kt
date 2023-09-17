@@ -41,7 +41,13 @@ suspend fun ApplicationContext.englishTranslation() {
             WebsiteTranslation.LOCATION_CONTACTS_HEADING to "(:chat-dots:)(orange) How to contact me?",
             WebsiteTranslation.LOCATION_CONTACTS_TEXT to "You can chat with me on Telegram. Here is the link. *Don't hesitate to say hello!*",
             WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_TEXT to "Telegram",
-            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin"
+            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
+            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_HEADING to "(:hammer:)(orange) What am I doing for now?",
+            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_FIRST_PARAGRAPH to "Currently, I work as a freelance developer, I take orders on making " +
+                    "websites, chat bots, server applications and so on.",
+            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_SECOND_PARAGRAPH to "I primarily work with the Russian market. Jump onto my business website!",
+            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_BUSINESS_WEBSITE_TEXT to "Go to titov.digital",
+            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL to "https://titov.digital"
         )
     }
 }
