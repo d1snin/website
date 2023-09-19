@@ -16,11 +16,11 @@
 
 package dev.d1s.website.translation
 
-import dev.d1s.beam.client.app.ApplicationContext
+import dev.d1s.beam.client.app.state.SpaceContext
 import dev.d1s.beam.client.app.state.translation
 import dev.d1s.beam.commons.GlobalTranslation
 
-suspend fun ApplicationContext.russianTranslation() {
+suspend fun SpaceContext.russianTranslation() {
     translation {
         languageCode = "ru"
         default = false
