@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package dev.d1s.website
+package dev.d1s.website.block.securityroom
 
-import dev.d1s.beam.client.app.ApplicationContext
-import dev.d1s.beam.client.app.BeamClientApplication
-import dev.d1s.beam.client.app.run
-import dev.d1s.website.space.rootSpace
-import dev.d1s.website.space.securityRoomSpace
+import dev.d1s.beam.client.app.state.BlockContext
+import dev.d1s.beam.client.embed
+import dev.d1s.beam.commons.BlockSize
 
-class WebsiteApplication : BeamClientApplication() {
+private const val EMBED_URL = "https://cam2.vdonsk.ru/embed/%s"
 
-    override suspend fun ApplicationContext.run() {
-        rootSpace()
-        securityRoomSpace()
+suspend fun BlockContext.camera(embedId: String) {
+    setSize {
+        BlockSize.MEDIUM
     }
-}
 
-fun main() {
-    run(WebsiteApplication())
+    setEntities {
+        val url = EMBED_URL.format(embedId)
+
+        embed(url, width = 100, height = 300)
+    }
 }

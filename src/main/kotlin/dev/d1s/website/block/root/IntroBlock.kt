@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package dev.d1s.website.block
+package dev.d1s.website.block.root
 
 import dev.d1s.beam.client.ContentEntitiesBuilder
 import dev.d1s.beam.client.app.state.BlockContext
@@ -23,9 +23,9 @@ import dev.d1s.beam.commons.BlockSize
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.website.translation.WebsiteTranslation
 
-suspend fun BlockContext.whatIsThis() {
+suspend fun BlockContext.intro() {
     setSize {
-        BlockSize.MEDIUM
+        BlockSize.LARGE
     }
 
     setEntities {
@@ -35,10 +35,9 @@ suspend fun BlockContext.whatIsThis() {
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    text(value = WebsiteTranslation.LOCATION_WHAT_IS_THIS_HEADING.asTemplate, heading = "h2")
+    text(value = WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING.asTemplate, heading = "h1")
 }
 
 private fun ContentEntitiesBuilder.text() {
-    text(value = WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH.asTemplate)
-    text(value = WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH.asTemplate)
+    text(value = WebsiteTranslation.LOCATION_ROOT_INTRO_TEXT.asTemplate)
 }

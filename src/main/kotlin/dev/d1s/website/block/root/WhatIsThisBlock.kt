@@ -14,27 +14,31 @@
  * limitations under the License.
  */
 
-package dev.d1s.website.block
+package dev.d1s.website.block.root
 
+import dev.d1s.beam.client.ContentEntitiesBuilder
 import dev.d1s.beam.client.app.state.BlockContext
-import dev.d1s.beam.client.image
+import dev.d1s.beam.client.text
 import dev.d1s.beam.commons.BlockSize
-import dev.d1s.beam.commons.metadataOf
+import dev.d1s.beam.commons.asTemplate
+import dev.d1s.website.translation.WebsiteTranslation
 
-private const val IMAGE_URL = "https://s3.d1s.dev/d1s-dev/me.jpg"
-
-suspend fun BlockContext.pictureOfMe() {
+suspend fun BlockContext.whatIsThis() {
     setSize {
-        BlockSize.SMALL
+        BlockSize.MEDIUM
     }
 
     setEntities {
-        image(url = IMAGE_URL, width = 100)
+        heading()
+        text()
     }
+}
 
-    setMetadata {
-        metadataOf(
-            "ui.block.image.fluid" to "true"
-        )
-    }
+private fun ContentEntitiesBuilder.heading() {
+    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_HEADING.asTemplate, heading = "h2")
+}
+
+private fun ContentEntitiesBuilder.text() {
+    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH.asTemplate)
+    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH.asTemplate)
 }

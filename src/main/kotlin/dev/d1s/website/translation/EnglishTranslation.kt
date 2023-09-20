@@ -44,26 +44,29 @@ suspend fun SpaceContext.englishTranslation() {
             GlobalTranslation.LOCATION_SPACE_LISTING_MESSAGE to "Explore the spaces on this instance:",
             GlobalTranslation.LOCATION_SPACE_LISTING_FETCH_MORE_BUTTON to "Load more",
 
-            WebsiteTranslation.LOCATION_TITLE to "d1snin's place",
-            WebsiteTranslation.LOCATION_DESCRIPTION to "This is my Internet page. You can learn more about me here.",
-            WebsiteTranslation.LOCATION_INTRO_HEADING to "(:emoji-wink:)(orange) I tell computers what to do.",
-            WebsiteTranslation.LOCATION_INTRO_TEXT to "Hey, welcome to my page. My name is Mikhail. I'm a web developer and enthusiast. " +
+            WebsiteTranslation.LOCATION_ROOT_TITLE to "d1snin's place",
+            WebsiteTranslation.LOCATION_ROOT_DESCRIPTION to "This is my Internet page. You can learn more about me here.",
+            WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING to "(:emoji-wink:)(orange) I tell computers what to do.",
+            WebsiteTranslation.LOCATION_ROOT_INTRO_TEXT to "Hey, welcome to my page. My name is Mikhail. I'm a web developer and enthusiast. " +
                     "I love Kotlin and everything related to it. Mostly interested in backend development. " +
                     "I have a wide-range experience using industry-standard JVM frameworks including Spring (Boot, Data, Web, etc), JPA and others. " +
                     "Now using Kotlin with Ktor as a web framework. I also develop frontend using [KVision][https://kvision.io].",
-            WebsiteTranslation.LOCATION_WHAT_IS_THIS_HEADING to "(:question-circle:)(orange) What is this?",
-            WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH to "This is my website running on home-made mini WCM - [*Beam*][https://github.com/d1snin/beam].",
-            WebsiteTranslation.LOCATION_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH to "Here you can learn more about me or just contact me.",
-            WebsiteTranslation.LOCATION_CONTACTS_HEADING to "(:chat-dots:)(orange) How to contact me?",
-            WebsiteTranslation.LOCATION_CONTACTS_TEXT to "You can chat with me on Telegram. Here is the link. *Don't hesitate to say hello!*",
-            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_TEXT to "Telegram",
-            WebsiteTranslation.LOCATION_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
-            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_HEADING to "(:hammer:)(orange) What am I doing for now?",
-            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_FIRST_PARAGRAPH to "Currently, I work as a freelance developer, I take orders on making " +
+            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_HEADING to "(:question-circle:)(orange) What is this?",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH to "This is my website running on home-made mini WCM - [*Beam*][https://github.com/d1snin/beam].",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH to "Here you can learn more about me or just contact me.",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_HEADING to "(:chat-dots:)(orange) How to contact me?",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TEXT to "You can chat with me on Telegram. Here is the link. *Don't hesitate to say hello!*",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT to "Telegram",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_HEADING to "(:hammer:)(orange) What am I doing for now?",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_FIRST_PARAGRAPH to "Currently, I work as a freelance developer, I take orders on making " +
                     "websites, chat bots, server applications and so on.",
-            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_SECOND_PARAGRAPH to "I primarily work with the Russian market. Jump onto my business website!",
-            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_BUSINESS_WEBSITE_TEXT to "Go to titov.digital",
-            WebsiteTranslation.LOCATION_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL to "https://titov.digital"
+            WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_SECOND_PARAGRAPH to "I primarily work with the Russian market. Jump onto my business website!",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_TEXT to "Go to titov.digital",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL to "https://titov.digital",
+
+            WebsiteTranslation.LOCATION_SECURITY_ROOM_TITLE to "Security Room",
+            WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Nearby IP cameras. Spy on me online for free."
         )
     }
 }
