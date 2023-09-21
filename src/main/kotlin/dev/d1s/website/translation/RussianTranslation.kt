@@ -47,23 +47,27 @@ suspend fun SpaceContext.russianTranslation() {
             WebsiteTranslation.LOCATION_ROOT_TITLE to "d1snin's page",
             WebsiteTranslation.LOCATION_ROOT_DESCRIPTION to "Моя публичная страница. Здесь можно узнать чуть больше обо мне.",
             WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING to "(:emoji-wink:)(orange) Говорю компьютерам, что им делать.",
-            WebsiteTranslation.LOCATION_ROOT_INTRO_TEXT to "Привет! Меня зовут Михаил. Я - веб-разработчик-энтузиаст. " +
+            WebsiteTranslation.LOCATION_ROOT_INTRO_PARAGRAPH to "Привет! Меня зовут Михаил. Я - веб-разработчик-энтузиаст. " +
                     "Люблю Kotlin и все, что его касается. Больше всего заинтересован в бэкенд-разработке. " +
                     "Я имею широкий опыт работы с крупными JVM фрэймворками, включая Spring (Boot, Data, Web, etc), JPA и другие " +
                     "Сейчас работаю на Kotlin вместе с Ktor и другими специализированными библиотеками. Пишу фронтенд тоже на Kotlin. Использую [KVision][https://kvision.io].",
             WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_HEADING to "(:question-circle:)(orange) Что это такое?",
-            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH to "Это мой веб-сайт, запущенный на моем *веб-движке* - [*Beam*][https://github.com/d1snin/beam].",
-            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH to "Здесь можно узнать обо мне, или просто связаться.",
-            WebsiteTranslation.LOCATION_ROOT_CONTACTS_HEADING to "(:chat-dots:)(orange) Как мне написать?",
-            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TEXT to "Со мной можно пообщаться в Telegram. Вот ссылка. *Не стесняйтесь даже просто написать!*",
-            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT to "Telegram",
-            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_FIRST_PARAGRAPH to "Это мой веб-сайт, запущенный на моем *веб-движке* - [*Beam*][https://github.com/d1snin/beam].",
+            WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_SECOND_PARAGRAPH to "Здесь можно узнать обо мне, или просто связаться.",
             WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_HEADING to "(:hammer:)(orange) Чем я сейчас занимаюсь?",
             WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_FIRST_PARAGRAPH to "Сейчас работаю как фриланс-разработчик. Я беру заказы на создание " +
                     "веб-сайтов, чат-ботов, серверных приложений и т.п.",
             WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_SECOND_PARAGRAPH to "Преимущественно, работаю с локальным российским рынком. Подробнее можно узнать на сайте.",
             WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_TEXT to "Перейти к titov.digital",
             WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL to "https://titov.digital",
+            WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_HEADING to "(:github:)(orange) Проекты с открытым кодом",
+            WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_PARAGRAPH to "Я работаю над кучкой проектов с открытым исходным кодом. Вы можете покапаться в репозиториях на моем GitHub.",
+            WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_TEXT to "Перейти в GitHub",
+            WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_URL to "https://github.com/d1snin",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_HEADING to "(:chat-dots:)(orange) Как мне написать?",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_PARAGRAPH to "Со мной можно пообщаться в Telegram. Вот ссылка. *Не стесняйтесь даже просто написать!*",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT to "Перейти в Telegram",
+            WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
 
             WebsiteTranslation.LOCATION_SECURITY_ROOM_TITLE to "Security Room",
             WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Листинг локальных IP-камер."

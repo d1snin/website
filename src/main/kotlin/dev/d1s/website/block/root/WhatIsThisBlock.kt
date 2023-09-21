@@ -39,6 +39,6 @@ private fun ContentEntitiesBuilder.heading() {
 }
 
 private fun ContentEntitiesBuilder.text() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_FIRST_PARAGRAPH.asTemplate)
-    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_TEXT_SECOND_PARAGRAPH.asTemplate)
+    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_FIRST_PARAGRAPH.asTemplate)
+    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_SECOND_PARAGRAPH.asTemplate)
 }

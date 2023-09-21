@@ -33,7 +33,7 @@ suspend fun BlockContext.contacts() {
     setEntities {
         heading()
         text()
-        links()
+        telegramLink()
     }
 }
 
@@ -42,10 +42,10 @@ private fun ContentEntitiesBuilder.heading() {
 }
 
 private fun ContentEntitiesBuilder.text() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TEXT.asTemplate)
+    text(value = WebsiteTranslation.LOCATION_ROOT_CONTACTS_PARAGRAPH.asTemplate)
 }
 
-private fun ContentEntitiesBuilder.links() {
+private fun ContentEntitiesBuilder.telegramLink() {
     buttonLink(
         text = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT.asTemplate,
         url = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL.asTemplate,

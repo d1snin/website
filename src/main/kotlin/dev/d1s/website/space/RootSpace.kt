@@ -65,6 +65,10 @@ private suspend fun SpaceContext.blocks() {
     }
 
     block {
+        openSource()
+    }
+
+    block {
         contacts()
     }
 }
