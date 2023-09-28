@@ -46,4 +46,7 @@ object WebsiteTranslation {
 
     const val LOCATION_SECURITY_ROOM_TITLE = "security-room.title"
     const val LOCATION_SECURITY_ROOM_DESCRIPTION = "security-room.description"
+
+    const val LOCATION_IMAGEBOARD_TITLE = "imageboard.title"
+    const val LOCATION_IMAGEBOARD_DESCRIPTION = "imageboard.description"
 }

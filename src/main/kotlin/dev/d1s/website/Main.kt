@@ -19,6 +19,7 @@ package dev.d1s.website
 import dev.d1s.beam.client.app.ApplicationContext
 import dev.d1s.beam.client.app.BeamClientApplication
 import dev.d1s.beam.client.app.run
+import dev.d1s.website.space.imageboardSpace
 import dev.d1s.website.space.rootSpace
 import dev.d1s.website.space.securityRoomSpace
 
@@ -27,6 +28,7 @@ class WebsiteApplication : BeamClientApplication() {
     override suspend fun ApplicationContext.run() {
         rootSpace()
         securityRoomSpace()
+        imageboardSpace()
     }
 }
 

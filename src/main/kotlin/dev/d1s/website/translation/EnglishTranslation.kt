@@ -70,7 +70,10 @@ suspend fun SpaceContext.englishTranslation() {
             WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
 
             WebsiteTranslation.LOCATION_SECURITY_ROOM_TITLE to "Security Room",
-            WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Nearby IP cameras. Spy on me online for free."
+            WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Nearby IP cameras. Spy on me online for free.",
+
+            WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Imageboard",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Pure randomcore I liked"
         )
     }
 }

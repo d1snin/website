@@ -17,26 +17,28 @@
 package dev.d1s.website.util
 
 import dev.d1s.beam.client.ViewConfigurationBuilder
+import dev.d1s.beam.commons.ROOT_SPACE_SLUG
+import dev.d1s.beam.commons.SpaceSlug
 import dev.d1s.beam.commons.SpaceThemeDefinition
 
 object DefaultIcon {
 
-    const val URL = "https://s3.d1s.dev/d1s-dev/icon.png"
+    const val URL = "https://s3.d1s.dev/d1s-dev/%s/icon.png"
 
-    const val APPLE_TOUCH_ICON_URL = "https://s3.d1s.dev/d1s-dev/apple-touch-icon.png"
-    const val FAVICON_16_URL = "https://s3.d1s.dev/d1s-dev/favicon-16x16.png"
-    const val FAVICON_32_URL = "https://s3.d1s.dev/d1s-dev/favicon-32x32.png"
-    const val FAVICON_ICO_URL = "https://s3.d1s.dev/d1s-dev/favicon.ico"
+    const val APPLE_TOUCH_ICON_URL = "https://s3.d1s.dev/d1s-dev/%s/apple-touch-icon.png"
+    const val FAVICON_16_URL = "https://s3.d1s.dev/d1s-dev/%s/favicon-16x16.png"
+    const val FAVICON_32_URL = "https://s3.d1s.dev/d1s-dev/%s/favicon-32x32.png"
+    const val FAVICON_ICO_URL = "https://s3.d1s.dev/d1s-dev/%s/favicon.ico"
 }
 
-fun ViewConfigurationBuilder.setDefaultIcon() {
+fun ViewConfigurationBuilder.setDefaultIcon(spaceSlug: SpaceSlug = ROOT_SPACE_SLUG) {
     theme = SpaceThemeDefinition.CatppuccinMocha.name
-    icon = DefaultIcon.URL
+    icon = DefaultIcon.URL.format(spaceSlug)
 
     favicon {
-        appleTouch = DefaultIcon.APPLE_TOUCH_ICON_URL
-        favicon16 = DefaultIcon.FAVICON_16_URL
-        favicon32 = DefaultIcon.FAVICON_32_URL
-        faviconIco = DefaultIcon.FAVICON_ICO_URL
+        appleTouch = DefaultIcon.APPLE_TOUCH_ICON_URL.format(spaceSlug)
+        favicon16 = DefaultIcon.FAVICON_16_URL.format(spaceSlug)
+        favicon32 = DefaultIcon.FAVICON_32_URL.format(spaceSlug)
+        faviconIco = DefaultIcon.FAVICON_ICO_URL.format(spaceSlug)
     }
 }

@@ -70,7 +70,10 @@ suspend fun SpaceContext.russianTranslation() {
             WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL to "https://t.me/d1snin",
 
             WebsiteTranslation.LOCATION_SECURITY_ROOM_TITLE to "Security Room",
-            WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Листинг локальных IP-камер."
+            WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Листинг локальных IP-камер.",
+
+            WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Имиджборд",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Рандомные картинки из галереи программиста"
         )
     }
 }
