@@ -19,6 +19,7 @@ package dev.d1s.website.translation
 import dev.d1s.beam.client.app.state.SpaceContext
 import dev.d1s.beam.client.app.state.translation
 import dev.d1s.beam.commons.GlobalTranslation
+import dev.d1s.beam.commons.VERSION
 
 suspend fun SpaceContext.russianTranslation() {
     translation {
@@ -27,19 +28,16 @@ suspend fun SpaceContext.russianTranslation() {
 
         translations(
             GlobalTranslation.LOCATION_ICON_ALT to "Иконка пространства Beam",
-            GlobalTranslation.LOCATION_SPACE_INFO_DEFAULT_TITLE to "Beam",
+            GlobalTranslation.LOCATION_DEFAULT_TITLE to "Beam",
+            GlobalTranslation.LOCATION_DEFAULT_REMARK to "Работает на движке [Beam][https://github.com/d1snin/beam] v$VERSION",
             GlobalTranslation.LOCATION_EXPLORE_DROPDOWN_CALLOUT to "Обзор",
             GlobalTranslation.LOCATION_DAEMON_STATUS_CONNECTED to "Подключен к сервису.",
             GlobalTranslation.LOCATION_DAEMON_STATUS_DISCONNECTED to "Не удалось подключиться к сервису.",
             GlobalTranslation.LOCATION_DAEMON_STATUS_MS_UNIT to "мс",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_NOT_FOUND_ICON_ALT to "Иконка 404",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_NOT_FOUND_MESSAGE to "Мы ничего не нашли.",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_EMPTY_SPACE_ICON_ALT to "Иконка пустого пространства",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_EMPTY_SPACE_MESSAGE to "Эта страница выглядит пустой.",
-            GlobalTranslation.LOCATION_FOOTER_MESSAGE_FIRST_PART to "Работает на движке",
-            GlobalTranslation.LOCATION_FOOTER_MESSAGE_SECOND_PART to "Beam",
-            GlobalTranslation.LOCATION_FOOTER_SOURCE_CODE_LINK_MESSAGE to "Исходный код на GitHub",
-            GlobalTranslation.LOCATION_FOOTER_SOURCE_CODE_LINK_URL to "https://github.com/d1snin/beam",
+            GlobalTranslation.LOCATION_FAILURE_CARD_NOT_FOUND_ICON_ALT to "Иконка 404",
+            GlobalTranslation.LOCATION_FAILURE_CARD_NOT_FOUND_MESSAGE to "Мы ничего не нашли.",
+            GlobalTranslation.LOCATION_FAILURE_CARD_EMPTY_SPACE_ICON_ALT to "Иконка пустого пространства",
+            GlobalTranslation.LOCATION_FAILURE_CARD_EMPTY_SPACE_MESSAGE to "Эта страница выглядит пустой.",
             GlobalTranslation.LOCATION_FOOTER_LANGUAGE_SWITCHER_MESSAGE to "Поменять язык...",
             GlobalTranslation.LOCATION_SPACE_LISTING_MESSAGE to "Посетите другие страницы:",
             GlobalTranslation.LOCATION_SPACE_LISTING_FETCH_MORE_BUTTON to "Загрузить больше",

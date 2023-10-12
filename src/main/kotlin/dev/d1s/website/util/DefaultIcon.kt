@@ -16,7 +16,7 @@
 
 package dev.d1s.website.util
 
-import dev.d1s.beam.client.ViewConfigurationBuilder
+import dev.d1s.beam.client.SpaceViewBuilder
 import dev.d1s.beam.commons.ROOT_SPACE_SLUG
 import dev.d1s.beam.commons.SpaceSlug
 import dev.d1s.beam.commons.SpaceThemeDefinition
@@ -31,7 +31,7 @@ object DefaultIcon {
     const val FAVICON_ICO_URL = "https://s3.d1s.dev/d1s-dev/%s/favicon.ico"
 }
 
-fun ViewConfigurationBuilder.setDefaultIcon(spaceSlug: SpaceSlug = ROOT_SPACE_SLUG) {
+fun SpaceViewBuilder.setDefaultIcon(spaceSlug: SpaceSlug = ROOT_SPACE_SLUG) {
     theme = SpaceThemeDefinition.CatppuccinMocha.name
     icon = DefaultIcon.URL.format(spaceSlug)
 

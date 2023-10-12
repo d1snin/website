@@ -26,24 +26,7 @@ suspend fun SpaceContext.englishTranslation() {
         default = true
 
         translations(
-            GlobalTranslation.LOCATION_ICON_ALT to "Beam space icon",
-            GlobalTranslation.LOCATION_SPACE_INFO_DEFAULT_TITLE to "Beam",
-            GlobalTranslation.LOCATION_EXPLORE_DROPDOWN_CALLOUT to "Explore",
-            GlobalTranslation.LOCATION_DAEMON_STATUS_CONNECTED to "Connected to daemon.",
-            GlobalTranslation.LOCATION_DAEMON_STATUS_DISCONNECTED to "Couldn't connect to daemon.",
-            GlobalTranslation.LOCATION_DAEMON_STATUS_MS_UNIT to "ms",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_NOT_FOUND_ICON_ALT to "404 image",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_NOT_FOUND_MESSAGE to "We couldn't find anything.",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_EMPTY_SPACE_ICON_ALT to "Empty space icon",
-            GlobalTranslation.LOCATION_SPACE_FAILURE_CARD_EMPTY_SPACE_MESSAGE to "This space seems to be empty.",
-            GlobalTranslation.LOCATION_FOOTER_MESSAGE_FIRST_PART to "Running",
-            GlobalTranslation.LOCATION_FOOTER_MESSAGE_SECOND_PART to "Beam",
-            GlobalTranslation.LOCATION_FOOTER_SOURCE_CODE_LINK_MESSAGE to "Source code on GitHub",
-            GlobalTranslation.LOCATION_FOOTER_SOURCE_CODE_LINK_URL to "https://github.com/d1snin/beam",
-            GlobalTranslation.LOCATION_FOOTER_LANGUAGE_SWITCHER_MESSAGE to "Switch language...",
-            GlobalTranslation.LOCATION_SPACE_LISTING_MESSAGE to "Explore the spaces on this instance:",
-            GlobalTranslation.LOCATION_SPACE_LISTING_FETCH_MORE_BUTTON to "Load more",
-
+            *GlobalTranslation.Default.translations.map { it.key to it.value }.toTypedArray(),
             WebsiteTranslation.LOCATION_ROOT_TITLE to "d1snin's place",
             WebsiteTranslation.LOCATION_ROOT_DESCRIPTION to "This is my Internet page. You can learn more about me here.",
             WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING to "(:emoji-wink:)(orange) I tell computers what to do.",
