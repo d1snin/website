@@ -16,20 +16,15 @@
 
 package dev.d1s.website.block.securityroom
 
-import dev.d1s.beam.client.app.state.BlockContext
-import dev.d1s.beam.client.embed
-import dev.d1s.beam.commons.BlockSize
+import dev.d1s.beam.client.app.state.SpaceContext
+import dev.d1s.beam.client.app.state.mediumBlockWithEntities
+import dev.d1s.beam.client.fullWidthEmbed
 
 private const val EMBED_URL = "https://cam2.vdonsk.ru/embed/%s"
 
-suspend fun BlockContext.camera(embedId: String) {
-    setSize {
-        BlockSize.MEDIUM
-    }
-
-    setEntities {
+suspend fun SpaceContext.camera(embedId: String) {
+    mediumBlockWithEntities {
         val url = EMBED_URL.format(embedId)
-
-        embed(url, width = 100, height = 300)
+        fullWidthEmbed(url, height = 300)
     }
 }

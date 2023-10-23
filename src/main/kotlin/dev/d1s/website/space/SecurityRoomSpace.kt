@@ -18,7 +18,6 @@ package dev.d1s.website.space
 
 import dev.d1s.beam.client.app.ApplicationContext
 import dev.d1s.beam.client.app.state.SpaceContext
-import dev.d1s.beam.client.app.state.block
 import dev.d1s.beam.client.app.state.space
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.website.block.securityroom.camera
@@ -58,8 +57,6 @@ private suspend fun SpaceContext.view() {
 
 private suspend fun SpaceContext.embeds() {
     embeds.forEach { id ->
-        block {
-            camera(id)
-        }
+        camera(id)
     }
 }

@@ -17,20 +17,17 @@
 package dev.d1s.website.block.root
 
 import dev.d1s.beam.client.ContentEntitiesBuilder
-import dev.d1s.beam.client.app.state.BlockContext
-import dev.d1s.beam.client.buttonLink
+import dev.d1s.beam.client.app.state.SpaceContext
+import dev.d1s.beam.client.app.state.mediumBlockWithEntities
+import dev.d1s.beam.client.fullWidthButtonLink
+import dev.d1s.beam.client.secondHeading
 import dev.d1s.beam.client.text
-import dev.d1s.beam.commons.BlockSize
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.beam.commons.contententity.ButtonLinkContentEntityTypeDefinition
 import dev.d1s.website.translation.WebsiteTranslation
 
-suspend fun BlockContext.contacts() {
-    setSize {
-        BlockSize.MEDIUM
-    }
-
-    setEntities {
+suspend fun SpaceContext.contacts() {
+    mediumBlockWithEntities {
         heading()
         text()
         telegramLink()
@@ -38,7 +35,7 @@ suspend fun BlockContext.contacts() {
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_CONTACTS_HEADING.asTemplate, heading = "h2")
+    secondHeading(value = WebsiteTranslation.LOCATION_ROOT_CONTACTS_HEADING.asTemplate)
 }
 
 private fun ContentEntitiesBuilder.text() {
@@ -46,10 +43,10 @@ private fun ContentEntitiesBuilder.text() {
 }
 
 private fun ContentEntitiesBuilder.telegramLink() {
-    buttonLink(
+    fullWidthButtonLink(
         text = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT.asTemplate,
+        icon = "telegram",
         url = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL.asTemplate,
-        style = ButtonLinkContentEntityTypeDefinition.Style.INFO,
-        width = 100
+        style = ButtonLinkContentEntityTypeDefinition.Style.INFO
     )
 }

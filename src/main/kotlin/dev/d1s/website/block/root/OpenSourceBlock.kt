@@ -16,21 +16,15 @@
 
 package dev.d1s.website.block.root
 
-import dev.d1s.beam.client.ContentEntitiesBuilder
-import dev.d1s.beam.client.app.state.BlockContext
-import dev.d1s.beam.client.buttonLink
-import dev.d1s.beam.client.text
-import dev.d1s.beam.commons.BlockSize
+import dev.d1s.beam.client.*
+import dev.d1s.beam.client.app.state.SpaceContext
+import dev.d1s.beam.client.app.state.mediumBlockWithEntities
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.beam.commons.contententity.ButtonLinkContentEntityTypeDefinition
 import dev.d1s.website.translation.WebsiteTranslation
 
-suspend fun BlockContext.openSource() {
-    setSize {
-        BlockSize.MEDIUM
-    }
-
-    setEntities {
+suspend fun SpaceContext.openSource() {
+    mediumBlockWithEntities {
         heading()
         text()
         githubLink()
@@ -38,7 +32,7 @@ suspend fun BlockContext.openSource() {
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_HEADING.asTemplate, heading = "h2")
+    secondHeading(value = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_HEADING.asTemplate)
 }
 
 private fun ContentEntitiesBuilder.text() {
@@ -46,10 +40,10 @@ private fun ContentEntitiesBuilder.text() {
 }
 
 private fun ContentEntitiesBuilder.githubLink() {
-    buttonLink(
+    fullWidthButtonLink(
         text = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_TEXT.asTemplate,
+        icon = "github",
         url = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_URL.asTemplate,
         style = ButtonLinkContentEntityTypeDefinition.Style.PRIMARY,
-        width = 100
     )
 }

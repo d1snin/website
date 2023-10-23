@@ -17,25 +17,22 @@
 package dev.d1s.website.block.root
 
 import dev.d1s.beam.client.ContentEntitiesBuilder
-import dev.d1s.beam.client.app.state.BlockContext
+import dev.d1s.beam.client.app.state.SpaceContext
+import dev.d1s.beam.client.app.state.mediumBlockWithEntities
+import dev.d1s.beam.client.secondHeading
 import dev.d1s.beam.client.text
-import dev.d1s.beam.commons.BlockSize
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.website.translation.WebsiteTranslation
 
-suspend fun BlockContext.whatIsThis() {
-    setSize {
-        BlockSize.MEDIUM
-    }
-
-    setEntities {
+suspend fun SpaceContext.whatIsThis() {
+    mediumBlockWithEntities {
         heading()
         text()
     }
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_HEADING.asTemplate, heading = "h2")
+    secondHeading(value = WebsiteTranslation.LOCATION_ROOT_WHAT_IS_THIS_HEADING.asTemplate)
 }
 
 private fun ContentEntitiesBuilder.text() {

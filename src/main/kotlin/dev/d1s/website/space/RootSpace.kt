@@ -18,7 +18,6 @@ package dev.d1s.website.space
 
 import dev.d1s.beam.client.app.ApplicationContext
 import dev.d1s.beam.client.app.state.SpaceContext
-import dev.d1s.beam.client.app.state.block
 import dev.d1s.beam.client.app.state.space
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.website.block.root.*
@@ -48,27 +47,10 @@ private suspend fun SpaceContext.view() {
 }
 
 private suspend fun SpaceContext.blocks() {
-    block {
-        pictureOfMe()
-    }
-
-    block {
-        intro()
-    }
-
-    block {
-        whatIsThis()
-    }
-
-    block {
-        whatAmIDoing()
-    }
-
-    block {
-        openSource()
-    }
-
-    block {
-        contacts()
-    }
+    pictureOfMe()
+    intro()
+    whatIsThis()
+    whatAmIDoing()
+    openSource()
+    contacts()
 }

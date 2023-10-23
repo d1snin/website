@@ -16,20 +16,14 @@
 
 package dev.d1s.website.block.root
 
-import dev.d1s.beam.client.ContentEntitiesBuilder
-import dev.d1s.beam.client.app.state.BlockContext
-import dev.d1s.beam.client.buttonLink
-import dev.d1s.beam.client.text
-import dev.d1s.beam.commons.BlockSize
+import dev.d1s.beam.client.*
+import dev.d1s.beam.client.app.state.SpaceContext
+import dev.d1s.beam.client.app.state.mediumBlockWithEntities
 import dev.d1s.beam.commons.asTemplate
 import dev.d1s.website.translation.WebsiteTranslation
 
-suspend fun BlockContext.whatAmIDoing() {
-    setSize {
-        BlockSize.MEDIUM
-    }
-
-    setEntities {
+suspend fun SpaceContext.whatAmIDoing() {
+    mediumBlockWithEntities {
         heading()
         text()
         businessLink()
@@ -37,7 +31,7 @@ suspend fun BlockContext.whatAmIDoing() {
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    text(value = WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_HEADING.asTemplate, heading = "h2")
+    secondHeading(value = WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_HEADING.asTemplate)
 }
 
 private fun ContentEntitiesBuilder.text() {
@@ -46,9 +40,9 @@ private fun ContentEntitiesBuilder.text() {
 }
 
 private fun ContentEntitiesBuilder.businessLink() {
-    buttonLink(
+    fullWidthButtonLink(
         text = WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_TEXT.asTemplate,
-        url = WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL.asTemplate,
-        width = 100
+        icon = "globe2",
+        url = WebsiteTranslation.LOCATION_ROOT_WHAT_AM_I_DOING_BUSINESS_WEBSITE_URL.asTemplate
     )
 }
