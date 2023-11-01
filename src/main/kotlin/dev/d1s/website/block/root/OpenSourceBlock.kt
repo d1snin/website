@@ -16,11 +16,14 @@
 
 package dev.d1s.website.block.root
 
-import dev.d1s.beam.client.*
+import dev.d1s.beam.client.ContentEntitiesBuilder
 import dev.d1s.beam.client.app.state.SpaceContext
 import dev.d1s.beam.client.app.state.mediumBlockWithEntities
+import dev.d1s.beam.client.fullWidthButtonLink
+import dev.d1s.beam.client.secondHeading
+import dev.d1s.beam.client.text
 import dev.d1s.beam.commons.asTemplate
-import dev.d1s.beam.commons.contententity.ButtonLinkContentEntityTypeDefinition
+import dev.d1s.beam.commons.contententity.ButtonStyle
 import dev.d1s.website.translation.WebsiteTranslation
 
 suspend fun SpaceContext.openSource() {
@@ -44,6 +47,6 @@ private fun ContentEntitiesBuilder.githubLink() {
         text = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_TEXT.asTemplate,
         icon = "github",
         url = WebsiteTranslation.LOCATION_ROOT_OPEN_SOURCE_GITHUB_URL.asTemplate,
-        style = ButtonLinkContentEntityTypeDefinition.Style.PRIMARY,
+        style = ButtonStyle.PRIMARY,
     )
 }

@@ -23,7 +23,7 @@ import dev.d1s.beam.client.fullWidthButtonLink
 import dev.d1s.beam.client.secondHeading
 import dev.d1s.beam.client.text
 import dev.d1s.beam.commons.asTemplate
-import dev.d1s.beam.commons.contententity.ButtonLinkContentEntityTypeDefinition
+import dev.d1s.beam.commons.contententity.ButtonStyle
 import dev.d1s.website.translation.WebsiteTranslation
 
 suspend fun SpaceContext.contacts() {
@@ -47,6 +47,6 @@ private fun ContentEntitiesBuilder.telegramLink() {
         text = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_TEXT.asTemplate,
         icon = "telegram",
         url = WebsiteTranslation.LOCATION_ROOT_CONTACTS_TELEGRAM_URL.asTemplate,
-        style = ButtonLinkContentEntityTypeDefinition.Style.INFO
+        style = ButtonStyle.INFO
     )
 }

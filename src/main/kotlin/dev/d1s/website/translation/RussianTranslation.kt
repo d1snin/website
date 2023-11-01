@@ -41,6 +41,7 @@ suspend fun SpaceContext.russianTranslation() {
             GlobalTranslation.LOCATION_FOOTER_LANGUAGE_SWITCHER_MESSAGE to "Поменять язык...",
             GlobalTranslation.LOCATION_SPACE_LISTING_MESSAGE to "Посетите другие страницы:",
             GlobalTranslation.LOCATION_SPACE_LISTING_FETCH_MORE_BUTTON to "Загрузить больше",
+            GlobalTranslation.LOCATION_BLOCK_COLLAPSED_CONTENT_ENTITY_BUTTON_MESSAGE to "Подробнее",
 
             WebsiteTranslation.LOCATION_ROOT_TITLE to "d1snin's page",
             WebsiteTranslation.LOCATION_ROOT_DESCRIPTION to "Моя публичная страница. Здесь можно узнать чуть больше обо мне.",
