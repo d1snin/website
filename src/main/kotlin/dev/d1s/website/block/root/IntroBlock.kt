@@ -21,7 +21,9 @@ import dev.d1s.beam.client.app.state.SpaceContext
 import dev.d1s.beam.client.app.state.largeBlockWithEntities
 import dev.d1s.beam.client.firstHeading
 import dev.d1s.beam.client.text
+import dev.d1s.beam.client.void
 import dev.d1s.beam.commons.asTemplate
+import dev.d1s.beam.commons.contententity.Alignment
 import dev.d1s.website.translation.WebsiteTranslation
 
 suspend fun SpaceContext.intro() {
@@ -32,9 +34,19 @@ suspend fun SpaceContext.intro() {
 }
 
 private fun ContentEntitiesBuilder.heading() {
-    firstHeading(value = WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING.asTemplate)
+    withVoidAround {
+        firstHeading(value = WebsiteTranslation.LOCATION_ROOT_INTRO_HEADING.asTemplate, alignment = Alignment.CENTER)
+    }
 }
 
 private fun ContentEntitiesBuilder.text() {
     text(value = WebsiteTranslation.LOCATION_ROOT_INTRO_PARAGRAPH.asTemplate)
+}
+
+private inline fun ContentEntitiesBuilder.withVoidAround(block: () -> Unit) {
+    val height = 1
+
+    void(height = height)
+    block()
+    void(height = height)
 }
