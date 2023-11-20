@@ -72,7 +72,9 @@ suspend fun SpaceContext.russianTranslation() {
             WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Листинг локальных IP-камер.",
 
             WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Имиджборд",
-            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Рандомные картинки из галереи программиста"
+            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Рандомные картинки из галереи программиста",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_HEADING to "(:images:)(orange) Велком на имиджборд.",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Сюда я закидываю абсолютно рандомные картинки, которые я нашел где-то в *самых дальних участках паутины*."
         )
     }
 }

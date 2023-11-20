@@ -49,4 +49,7 @@ object WebsiteTranslation {
 
     const val LOCATION_IMAGEBOARD_TITLE = "imageboard.title"
     const val LOCATION_IMAGEBOARD_DESCRIPTION = "imageboard.description"
+
+    const val LOCATION_IMAGEBOARD_INTRO_HEADING = "imageboard.intro.heading"
+    const val LOCATION_IMAGEBOARD_INTRO_PARAGRAPH = "imageboard.intro.paragraph"
 }

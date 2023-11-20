@@ -20,6 +20,7 @@ import dev.d1s.beam.client.app.ApplicationContext
 import dev.d1s.beam.client.app.state.SpaceContext
 import dev.d1s.beam.client.app.state.space
 import dev.d1s.beam.commons.asTemplate
+import dev.d1s.website.block.imageboard.intro
 import dev.d1s.website.translation.WebsiteTranslation
 import dev.d1s.website.translation.englishTranslation
 import dev.d1s.website.translation.russianTranslation
@@ -33,6 +34,8 @@ suspend fun ApplicationContext.imageboardSpace() {
         russianTranslation()
 
         view()
+
+        blocks()
     }
 }
 
@@ -43,4 +46,8 @@ private suspend fun SpaceContext.view() {
         title = WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE.asTemplate
         description = WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION.asTemplate
     }
+}
+
+private suspend fun SpaceContext.blocks() {
+    intro()
 }

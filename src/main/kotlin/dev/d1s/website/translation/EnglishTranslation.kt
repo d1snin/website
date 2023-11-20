@@ -56,7 +56,9 @@ suspend fun SpaceContext.englishTranslation() {
             WebsiteTranslation.LOCATION_SECURITY_ROOM_DESCRIPTION to "Nearby IP cameras. Spy on me online for free.",
 
             WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Imageboard",
-            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Pure randomcore I liked"
+            WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Pure randomcore I liked",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_HEADING to "(:images:)(orange) Good landing on my imageboard.",
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Here I post absolute randomness I've found somewhere in the *deepest parts of the Internet*."
         )
     }
 }
