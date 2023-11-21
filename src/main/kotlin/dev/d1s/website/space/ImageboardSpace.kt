@@ -29,7 +29,7 @@ import dev.d1s.website.util.setDefaultIcon
 private const val IDENTIFIER = "imageboard"
 
 suspend fun ApplicationContext.imageboardSpace() {
-    space(IDENTIFIER) {
+    space(IDENTIFIER, processBlocks = false) {
         englishTranslation()
         russianTranslation()
 
