@@ -38,6 +38,8 @@ suspend fun SpaceContext.russianTranslation() {
             GlobalTranslation.LOCATION_FAILURE_CARD_NOT_FOUND_MESSAGE to "Мы ничего не нашли.",
             GlobalTranslation.LOCATION_FAILURE_CARD_EMPTY_SPACE_ICON_ALT to "Иконка пустого пространства",
             GlobalTranslation.LOCATION_FAILURE_CARD_EMPTY_SPACE_MESSAGE to "Эта страница выглядит пустой.",
+            GlobalTranslation.LOCATION_FAILURE_CARD_LOST_CONNECTION_ICON_ALT to "Иконка потерянного соединения.",
+            GlobalTranslation.LOCATION_FAILURE_CARD_LOST_CONNECTION_MESSAGE to "Соединение с сервисом потеряно.",
             GlobalTranslation.LOCATION_FOOTER_LANGUAGE_SWITCHER_MESSAGE to "Поменять язык...",
             GlobalTranslation.LOCATION_SPACE_LISTING_MESSAGE to "Посетите другие страницы:",
             GlobalTranslation.LOCATION_SPACE_LISTING_FETCH_MORE_BUTTON to "Загрузить больше",
