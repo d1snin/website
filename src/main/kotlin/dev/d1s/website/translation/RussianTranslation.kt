@@ -76,7 +76,12 @@ suspend fun SpaceContext.russianTranslation() {
             WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Имиджборд",
             WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Рандомные картинки из галереи программиста",
             WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_HEADING to "(:images:)(orange) Велком на имиджборд.",
-            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Сюда я закидываю абсолютно рандомные картинки, которые я нашел где-то в *самых дальних участках паутины*."
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Сюда я закидываю абсолютно рандомные картинки, которые я нашел где-то в *самых дальних участках паутины*.",
+
+            WebsiteTranslation.LOCATION_GALLERY_TITLE to "Галерея",
+            WebsiteTranslation.LOCATION_GALLERY_DESCRIPTION to "Повседневная жизнь. На картинках.",
+            WebsiteTranslation.LOCATION_GALLERY_INTRO_HEADING to "(:images:)(orange) Имиджборд на реальных событиях.",
+            WebsiteTranslation.LOCATION_GALLERY_INTRO_PARAGRAPH to "Сюда кидаю картинки, которые были сделаны лично мной, а не как в [имиджборде][/imageboard]. Посты здесь редкие. *Приятного просмотра*."
         )
     }
 }

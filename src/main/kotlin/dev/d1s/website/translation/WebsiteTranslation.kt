@@ -52,4 +52,10 @@ object WebsiteTranslation {
 
     const val LOCATION_IMAGEBOARD_INTRO_HEADING = "imageboard.intro.heading"
     const val LOCATION_IMAGEBOARD_INTRO_PARAGRAPH = "imageboard.intro.paragraph"
+
+    const val LOCATION_GALLERY_TITLE = "gallery.title"
+    const val LOCATION_GALLERY_DESCRIPTION = "gallery.description"
+
+    const val LOCATION_GALLERY_INTRO_HEADING = "gallery.intro.heading"
+    const val LOCATION_GALLERY_INTRO_PARAGRAPH = "gallery.intro.paragraph"
 }

@@ -58,7 +58,12 @@ suspend fun SpaceContext.englishTranslation() {
             WebsiteTranslation.LOCATION_IMAGEBOARD_TITLE to "Imageboard",
             WebsiteTranslation.LOCATION_IMAGEBOARD_DESCRIPTION to "Pure randomcore I liked",
             WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_HEADING to "(:images:)(orange) Good landing on my imageboard.",
-            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Here I post absolute randomness I've found somewhere in the *deepest parts of the Internet*."
+            WebsiteTranslation.LOCATION_IMAGEBOARD_INTRO_PARAGRAPH to "Here I post absolute randomness I've found somewhere in the *deepest parts of the Internet*.",
+
+            WebsiteTranslation.LOCATION_GALLERY_TITLE to "Gallery",
+            WebsiteTranslation.LOCATION_GALLERY_DESCRIPTION to "Every-day life. Imaged.",
+            WebsiteTranslation.LOCATION_GALLERY_INTRO_HEADING to "(:images:)(orange) [Imageboard][/imageboard] but real.",
+            WebsiteTranslation.LOCATION_GALLERY_INTRO_PARAGRAPH to "Unlike in imageboard, here I post pictures made by myself. Posts here are rare. *Enjoy*."
         )
     }
 }
